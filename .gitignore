@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.env*.local
+.vercel
+.taste-skill/
+*.log
+.DS_Store
+coverage/
+playwright-report/
+test-results/
