@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/*
+  FixU design tokens
+  - One neutral base (ink + sand), one primary (sage), one meaningful accent (amber = catch-up / behind, nothing else).
+  - "At risk" uses slate blue so amber keeps its single meaning. Status is always paired with an icon + label.
+  - Light is the default; dark follows the system unless the user picks a theme (html[data-theme]).
+*/
+:root {
+  color-scheme: light;
+  --bg: #f4efe6;
+  --surface: #fbf9f5;
+  --surface-2: #ece6db;
+  --line: #dcd4c6;
+  --ink: #14212b;
+  --muted: #56626c;
+  --primary: #3e6f67;
+  --primary-soft: #dce8e4;
+  --on-primary: #ffffff;
+  --catchup: #c98118;
+  --catchup-ink: #845004;
+  --catchup-soft: #fbebcd;
+  --risk: #4a6382;
+  --risk-soft: #e1e7ef;
+  --danger: #a63c2e;
+  --danger-soft: #f6dfda;
+  --focus: #2f6fb0;
+  --shadow: 0 1px 2px rgb(20 33 43 / 0.06), 0 8px 24px -12px rgb(20 33 43 / 0.18);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e171e;
+  --surface: #15212a;
+  --surface-2: #1d2b35;
+  --line: #2b3b47;
+  --ink: #eee8de;
+  --muted: #9ba7b0;
+  --primary: #8db8ae;
+  --primary-soft: #1c3531;
+  --on-primary: #0e171e;
+  --catchup: #e8a740;
+  --catchup-ink: #f2be6a;
+  --catchup-soft: #3a2c14;
+  --risk: #9db3cf;
+  --risk-soft: #1e2a3a;
+  --danger: #ee9182;
+  --danger-soft: #3a1e1a;
+  --focus: #8fc1f0;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0e171e;
+    --surface: #15212a;
+    --surface-2: #1d2b35;
+    --line: #2b3b47;
+    --ink: #eee8de;
+    --muted: #9ba7b0;
+    --primary: #8db8ae;
+    --primary-soft: #1c3531;
+    --on-primary: #0e171e;
+    --catchup: #e8a740;
+    --catchup-ink: #f2be6a;
+    --catchup-soft: #3a2c14;
+    --risk: #9db3cf;
+    --risk-soft: #1e2a3a;
+    --danger: #ee9182;
+    --danger-soft: #3a1e1a;
+    --focus: #8fc1f0;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-on-primary: var(--on-primary);
+  --color-catchup: var(--catchup);
+  --color-catchup-ink: var(--catchup-ink);
+  --color-catchup-soft: var(--catchup-soft);
+  --color-risk: var(--risk);
+  --color-risk-soft: var(--risk-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-focus: var(--focus);
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: var(--shadow);
+  --radius-card: 1.25rem;
+  --radius-control: 0.875rem;
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Spacing uses Tailwind's 4px scale. Type scale: 13 / 15 / 17 / 22 / 30 / 40. */
+
+html {
+  background: var(--bg);
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+}
+
+@media (pointer: fine) {
+  html {
+    overscroll-behavior: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* One focus ring for the whole app */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Keep focused elements clear of the sticky bars */
+:where(a, button, input, textarea, select, [tabindex]) {
+  scroll-margin-block: 96px;
+}
+
+dialog::backdrop {
+  background: rgb(14 23 30 / 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
