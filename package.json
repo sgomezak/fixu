@@ -10,7 +10,8 @@
     "brand": "NODE_PATH=$(npm root -g) node brand/build-icons.mjs",
     "shots": "NODE_PATH=$(npm root -g) node scripts/shots.mjs",
     "contrast": "node scripts/contrast.mjs",
-    "test": "vitest run"
+    "test": "vitest run",
+    "e2e": "NODE_PATH=$(npm root -g) node tests/e2e/daily-flow.mjs"
   },
   "dependencies": {
     "@serwist/next": "^9.5.13",

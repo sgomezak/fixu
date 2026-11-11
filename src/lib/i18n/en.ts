@@ -119,6 +119,7 @@ export const en = {
       area: 'Area',
       date: 'Date',
       start: 'Start',
+      time: 'Time',
       end: 'End',
       allDay: 'All day',
       save: 'Add Event',

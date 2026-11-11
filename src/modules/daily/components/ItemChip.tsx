@@ -64,7 +64,7 @@ export function ItemChip({ item, today, nowMin, onOpen }: { item: CalendarItem; 
     >
       <Icon size={16} strokeWidth={2.25} aria-hidden="true" className="shrink-0" />
       <span className="min-w-0 flex-1">
-        <span className={`block truncate text-[0.9375rem] font-medium ${look.titleClass ?? ''}`}>{itemTitle(item)}</span>
+        <span className={`line-clamp-2 block text-[0.9375rem] font-medium break-words ${look.titleClass ?? ''}`}>{itemTitle(item)}</span>
         {(meta || look.stateLabel) && (
           <span className="block truncate text-[0.8125rem] text-muted">
             {[look.stateLabel, meta].filter(Boolean).join(' · ')}

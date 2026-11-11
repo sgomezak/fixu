@@ -34,3 +34,37 @@
 - One type family (Instrument Sans) for UI and the wordmark.
 - Quick add is UI only; submitting says plainly that nothing was saved. The parser connects in Phase 2.
 - Not yet checked: Lighthouse (needs a deployed URL) and install on a real phone.
+
+## Phase 1: Daily calendar
+
+**Scope:** Day / Week / Month / Year views, events with planned / done / missed / rescheduled states, goals panel (side column on desktop, summary + sheet on phones), calendar layers (personal, Madrid public holidays, NTT DATA, Real Madrid, cultural dates), NTT holiday import, database schema.
+
+### Checks run
+
+| Check | Result |
+|---|---|
+| Unit tests (Vitest) | 27/27 pass: Easter and Semana Santa (incl. cross-check against the BOE), Swedish Mother's Day, Madrid timezone and DST, goal maths, ICS parsing, NTT import parsing, holiday data has sources |
+| End-to-end flow, 390×844 (`npm run e2e`) | 8/8 pass: validation, add event, mark done + undo, reschedule keeps history, delete + undo, holiday source link, layer toggle, view switching with URL state |
+| axe-core, 11 routes/views × 3 configs | 0 violations (fixed: day buttons whose accessible name didn't contain their visible text) |
+| Schema migration + holiday seed on Postgres 16 | Applies cleanly; seed is idempotent |
+| Lint, types, production build | Pass |
+| Screenshots | `docs/screenshots/phase-1/` (demo events are test data injected into the headless browser only) |
+
+### Issues found and fixed
+
+| Issue | Severity | Fix |
+|---|---|---|
+| Month/year goals compared against the whole period, so a new user was "Behind" on day one | High | Goals count from when tracking began |
+| Form error text sat inside the label, polluting the field's accessible name | Medium | Error moved outside the label, linked with `aria-describedby` |
+| Day/month buttons: accessible name didn't contain visible text | Medium | Visible text + screen-reader-only full date |
+| "1 sessions planned", "Gym · Gym" | Low | Singular units; area hidden when it repeats the title |
+| Long holiday names cut off | Low | Titles wrap to two lines |
+| Event time labelled "Start" while showing a range | Low | Labelled "Time" |
+
+### Assumptions and open items
+
+- **Holiday data:** 2026 and 2027 national/regional days from the BOE (cross-checked with the Comunidad's 2027 decree); 2026 Madrid city days from the BOCM. **2027 Madrid city days (15 May, 9 Nov) are marked provisional:** announced by the city council, but the BOCM list isn't published yet (usually early December).
+- **Storage:** events, layers and NTT holidays are kept in the browser until the Supabase project is connected; the schema is ready (`supabase/migrations`).
+- **Real Madrid layer** shows "Waiting for the fixtures API key" until the key is set. football-data.org's free tier covers La Liga and the Champions League; other competitions come from `FIXTURES_ICS_URLS`.
+- **Social goal** uses the brief's "at least one social block a week" until you set a target; **side-hustle target** stays "not set".
+- Not yet checked: Lighthouse and install on a phone (need a deployed URL).

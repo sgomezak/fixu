@@ -43,8 +43,8 @@ export function EventForm({ date, startMin, onSaved }: { date: string; startMin:
 
   return (
     <form onSubmit={submit} noValidate className="flex flex-col gap-4">
-      <label className="flex flex-col gap-1">
-        <span className={fieldStyles.label}>{t.daily.form.name}</span>
+      <div className="flex flex-col gap-1">
+        <label htmlFor={ids.title} className={fieldStyles.label}>{t.daily.form.name}</label>
         <input
           ref={titleRef}
           id={ids.title}
@@ -58,7 +58,7 @@ export function EventForm({ date, startMin, onSaved }: { date: string; startMin:
           className={fieldStyles.input}
         />
         {errors.title && <span id={ids.titleErr} className={fieldStyles.error}>{errors.title}</span>}
-      </label>
+      </div>
       <div className="grid grid-cols-2 gap-3">
         <label className="flex flex-col gap-1">
           <span className={fieldStyles.label}>{t.daily.form.area}</span>

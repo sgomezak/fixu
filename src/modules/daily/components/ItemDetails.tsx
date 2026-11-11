@@ -23,7 +23,7 @@ export function ItemDetails({ item, onDone, onToast }: { item: CalendarItem; onD
       <dd>{formatDay(item.date)}</dd>
       {time && (
         <>
-          <dt className="text-muted">{t.daily.form.start}</dt>
+          <dt className="text-muted">{t.daily.form.time}</dt>
           <dd className="tabular">{time}</dd>
         </>
       )}
