@@ -1,0 +1,197 @@
+[
+  {
+    "route": "/",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/daily",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/health",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/finance",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/news",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/settings",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/design",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=week",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=month",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=year",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=day&date=2026-12-08",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/news?s=aviation",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/news?s=spain",
+    "config": "mobile-light",
+    "violations": []
+  },
+  {
+    "route": "/",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/daily",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/health",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/finance",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/news",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/settings",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/design",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=week",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=month",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=year",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=day&date=2026-12-08",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/news?s=aviation",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/news?s=spain",
+    "config": "mobile-dark",
+    "violations": []
+  },
+  {
+    "route": "/",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/daily",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/health",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/finance",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/news",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/settings",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/design",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=week",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=month",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=year",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/daily?view=day&date=2026-12-08",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/news?s=aviation",
+    "config": "desktop-light",
+    "violations": []
+  },
+  {
+    "route": "/news?s=spain",
+    "config": "desktop-light",
+    "violations": []
+  }
+]

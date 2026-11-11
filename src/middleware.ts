@@ -26,6 +26,19 @@ export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const isPublic = PUBLIC.some((p) => path === p || path.startsWith(p));
 
+  // Single-user app: only the owner's email may use it (set FIXU_OWNER_EMAIL on the server).
+  const owner = process.env.FIXU_OWNER_EMAIL?.trim().toLowerCase();
+  if (user && owner && user.email?.toLowerCase() !== owner) {
+    await supabase.auth.signOut();
+    if (path.startsWith('/api/')) return NextResponse.json({ error: 'No access' }, { status: 403 });
+    const url = request.nextUrl.clone();
+    url.pathname = '/login';
+    url.search = '?error=denied';
+    const denied = NextResponse.redirect(url);
+    response.cookies.getAll().forEach((c) => denied.cookies.set(c));
+    return denied;
+  }
+
   if (!user && !isPublic) {
     if (path.startsWith('/api/')) return NextResponse.json({ error: 'Sign in required' }, { status: 401 });
     const url = request.nextUrl.clone();

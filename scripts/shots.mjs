@@ -12,6 +12,7 @@ mkdirSync(out, { recursive: true });
 const routes = {
   dashboard: '/', daily: '/daily', health: '/health', finance: '/finance', news: '/news', settings: '/settings', design: '/design',
   'daily-week': '/daily?view=week', 'daily-month': '/daily?view=month', 'daily-year': '/daily?view=year', 'daily-holiday': '/daily?view=day&date=2026-12-08',
+  'news-aviation': '/news?s=aviation', 'news-spain': '/news?s=spain',
 };
 
 // Demo data for screenshots only (browser storage of the headless run): shows each event state.
@@ -50,7 +51,7 @@ for (const c of configs) {
     await page.goto(base + path, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(150);
-    await page.screenshot({ path: `${out}/${name}-${c.tag}.png`, fullPage: name.startsWith('daily') });
+    await page.screenshot({ path: `${out}/${name}-${c.tag}.png`, fullPage: name.startsWith('daily') || name.startsWith('health') || name.startsWith('news') });
     await page.addScriptTag({ content: axeSource });
     const r = await page.evaluate(async () => (await window.axe.run(document, { resultTypes: ['violations'] })).violations.map((v) => ({ id: v.id, impact: v.impact, nodes: v.nodes.length, help: v.help })));
     results.push({ route: path, config: c.tag, violations: r });

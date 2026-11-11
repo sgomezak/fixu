@@ -10,7 +10,7 @@ const withSerwist = withSerwistInit({
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Bundled fixtures snapshot is read at runtime by the fixtures route.
-  outputFileTracingIncludes: { '/api/fixtures': ['./data/fixtures/**'] },
+  outputFileTracingIncludes: { '/api/fixtures': ['./data/fixtures/**'], '/health': ['./data/garmin/**'] },
 };
 
 export default withSerwist(nextConfig);

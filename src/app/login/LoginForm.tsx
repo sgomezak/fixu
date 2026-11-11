@@ -13,7 +13,8 @@ export function LoginForm() {
   const input = useRef<HTMLInputElement>(null);
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
-  const [error, setError] = useState(params.get('error') === 'link' ? t.login.linkError : '');
+  const initial = params.get('error');
+  const [error, setError] = useState(initial === 'link' ? t.login.linkError : initial === 'denied' ? t.login.notAllowed : '');
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,12 +33,12 @@ export function LoginForm() {
     if (next) redirect.searchParams.set('next', next);
     const { error: err } = await supabase.auth.signInWithOtp({
       email: value,
-      // Never creates accounts: the owner's user is created once in the Supabase dashboard.
-      options: { shouldCreateUser: false, emailRedirectTo: redirect.toString() },
+      // The account is created on first sign-in; the server only lets FIXU_OWNER_EMAIL in.
+      options: { shouldCreateUser: true, emailRedirectTo: redirect.toString() },
     });
     if (err) {
       setStatus('idle');
-      setError(/signup|not allowed|not found/i.test(err.message) ? t.login.notAllowed : t.login.failed);
+      setError(/signups? not allowed/i.test(err.message) ? t.login.notAllowed : /rate limit|too many/i.test(err.message) ? t.login.rateLimited : `${t.login.failed} (${err.message})`);
       input.current?.focus();
       return;
     }
