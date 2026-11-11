@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { Card, PageHeader } from '@/components/ui';
 import { ThemePicker } from './ThemePicker';
+import { CompanyHolidaysImport } from '@/modules/daily/components/CompanyHolidaysImport';
 import { profileDefaults } from '@/lib/profile';
 import { t } from '@/lib/i18n/en';
 
@@ -26,6 +27,10 @@ export default function SettingsPage() {
           <dd className="tabular font-medium">{n.sundayReport}</dd>
         </dl>
         <p className="text-[0.875rem] text-muted">{t.settings.notificationsSoon}</p>
+      </Card>
+      <Card className="flex flex-col gap-3">
+        <h2 className="text-[1.0625rem] font-semibold">{t.settings.company.title}</h2>
+        <CompanyHolidaysImport />
       </Card>
       <Link
         href="/design"

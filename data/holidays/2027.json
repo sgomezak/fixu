@@ -1,0 +1,136 @@
+{
+  "year": 2027,
+  "region": "Comunidad de Madrid",
+  "city": "Madrid",
+  "verified": "2026-11-11",
+  "holidays": [
+    {
+      "date": "2027-01-01",
+      "name": "New Year’s Day (Año Nuevo)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-01-06",
+      "name": "Epiphany (Epifanía del Señor)",
+      "scope": "regional",
+      "source": {
+        "name": "BOCM núm. 234, 1 Oct 2026 — Decreto 82/2026, de 30 de septiembre (fiestas laborales 2027, Comunidad de Madrid)",
+        "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/01/BOCM-20261001-19.PDF"
+      }
+    },
+    {
+      "date": "2027-03-19",
+      "name": "Saint Joseph (San José)",
+      "scope": "regional",
+      "source": {
+        "name": "BOCM núm. 234, 1 Oct 2026 — Decreto 82/2026, de 30 de septiembre (fiestas laborales 2027, Comunidad de Madrid)",
+        "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/01/BOCM-20261001-19.PDF"
+      }
+    },
+    {
+      "date": "2027-03-25",
+      "name": "Maundy Thursday (Jueves Santo)",
+      "scope": "regional",
+      "source": {
+        "name": "BOCM núm. 234, 1 Oct 2026 — Decreto 82/2026, de 30 de septiembre (fiestas laborales 2027, Comunidad de Madrid)",
+        "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/01/BOCM-20261001-19.PDF"
+      }
+    },
+    {
+      "date": "2027-03-26",
+      "name": "Good Friday (Viernes Santo)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-05-01",
+      "name": "Labour Day (Fiesta del Trabajo)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-05-15",
+      "name": "San Isidro Labrador",
+      "scope": "local",
+      "source": {
+        "name": "Agreed by Madrid city council (Pleno, 29 Sep 2026) as reported; official BOCM list of 2027 local holidays not yet published",
+        "url": null
+      },
+      "provisional": true
+    },
+    {
+      "date": "2027-08-16",
+      "name": "Monday after the Assumption (traslado de la Asunción)",
+      "scope": "regional",
+      "source": {
+        "name": "BOCM núm. 234, 1 Oct 2026 — Decreto 82/2026, de 30 de septiembre (fiestas laborales 2027, Comunidad de Madrid)",
+        "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/01/BOCM-20261001-19.PDF"
+      }
+    },
+    {
+      "date": "2027-10-12",
+      "name": "Spain’s National Day (Fiesta Nacional de España)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-11-01",
+      "name": "All Saints’ Day (Todos los Santos)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-11-09",
+      "name": "Nuestra Señora de la Almudena",
+      "scope": "local",
+      "source": {
+        "name": "Agreed by Madrid city council (Pleno, 29 Sep 2026) as reported; official BOCM list of 2027 local holidays not yet published",
+        "url": null
+      },
+      "provisional": true
+    },
+    {
+      "date": "2027-12-06",
+      "name": "Constitution Day (Día de la Constitución)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-12-08",
+      "name": "Immaculate Conception (Inmaculada Concepción)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    },
+    {
+      "date": "2027-12-25",
+      "name": "Christmas Day (Natividad del Señor)",
+      "scope": "national",
+      "source": {
+        "name": "BOE, 13 Oct 2026 — Resolución de 8 de octubre de 2026, Dirección General de Trabajo (fiestas laborales 2027)",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+      }
+    }
+  ]
+}
