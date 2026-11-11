@@ -9,7 +9,7 @@ import { Toast, useToast } from '@/components/ui/Toast';
 import { addDays, addMonths, daysInMonth, parts, startOfWeek, toISO, todayIn, type ISODate } from '@/lib/dates';
 import { t } from '@/lib/i18n/en';
 import { zoned } from '@/lib/tz';
-import { useCalendarData } from '@/modules/daily/store';
+import { calendarActions, useCalendarData } from '@/modules/daily/store';
 import { itemsForRange } from '@/modules/daily/sources';
 import { calendarGoals } from '@/modules/daily/goals';
 import type { CalendarItem, Fixture } from '@/modules/daily/types';
@@ -167,10 +167,25 @@ export function DailyView() {
         </div>
       </div>
 
+      {data.error && (
+        <div role="alert" className="flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-card)] border border-danger/40 bg-danger-soft px-4 py-3">
+          <p className="text-[0.9375rem] text-ink">
+            {data.error === 'save' ? t.daily.sync.saveError : data.error === 'signedOut' ? t.daily.sync.signedOut : t.daily.sync.loadError}
+          </p>
+          {data.error === 'save' ? (
+            <button type="button" onClick={calendarActions.dismissError} className={buttonStyles.quiet}>{t.daily.sync.dismiss}</button>
+          ) : data.error === 'signedOut' ? (
+            <a href="/login" className={buttonStyles.secondary}>{t.daily.sync.signIn}</a>
+          ) : (
+            <button type="button" onClick={calendarActions.retry} className={buttonStyles.secondary}>{t.daily.sync.retry}</button>
+          )}
+        </div>
+      )}
+
       <GoalsSummary mode={panelMode} goals={goals} dayCount={dayOwnCount} onOpen={() => goalSheet.current?.open()} />
 
       <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <section aria-label={periodTitle(view, date)} className="min-w-0">
+        <section aria-label={periodTitle(view, date)} aria-busy={data.status === 'loading'} className={`min-w-0 transition-opacity duration-150 ${data.status === 'loading' ? 'opacity-60' : ''}`}>
           {view === 'day' && <DayView items={items} date={date} today={today} nowMin={nowMin} onOpen={open} onSlot={(m) => newEvent(date, m)} />}
           {view === 'week' && <WeekView items={items} date={date} today={today} nowMin={nowMin} onOpen={open} onPickDay={(d) => go({ view: 'day', date: d })} />}
           {view === 'month' && <MonthView items={items} date={date} today={today} nowMin={nowMin} onOpen={open} onPickDay={(d) => go({ view: 'day', date: d })} />}

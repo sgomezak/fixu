@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { Card, PageHeader } from '@/components/ui';
 import { ThemePicker } from './ThemePicker';
+import { Account } from './Account';
+import { supabaseEnabled } from '@/lib/supabase/config';
 import { CompanyHolidaysImport } from '@/modules/daily/components/CompanyHolidaysImport';
 import { profileDefaults } from '@/lib/profile';
 import { t } from '@/lib/i18n/en';
@@ -32,6 +34,12 @@ export default function SettingsPage() {
         <h2 className="text-[1.0625rem] font-semibold">{t.settings.company.title}</h2>
         <CompanyHolidaysImport />
       </Card>
+      {supabaseEnabled && (
+        <Card className="flex flex-col gap-3">
+          <h2 className="text-[1.0625rem] font-semibold">{t.settings.account}</h2>
+          <Account />
+        </Card>
+      )}
       <Link
         href="/design"
         className="flex min-h-14 items-center justify-between rounded-[var(--radius-card)] border border-line bg-surface px-5 font-medium transition-colors duration-150 hover:bg-surface-2"
