@@ -1,0 +1,1068 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:-//FOTMOB//FOTMOB 1.0//EN
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+X-WR-CALDESC:Real Madrid fixtures
+X-WR-CALNAME:Real Madrid
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5958714\nClub Friendlies
+DTEND:20260728T180000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260728T160000Z
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Leganés  (4-1)
+TRANSP:TRANSPARENT
+UID:5958714-8633@fotmob.com
+URL:https://www.fotmob.com/match/5958714
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Leganés starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Leganés starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5909892\nClub Friendlies
+DTEND:20260801T180000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260801T160000Z
+LOCATION:Sportpark Klagenfurt\, Siebenhügelstraße 105\, Klagenfurt am Wört
+ hersee\, AUT
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Fiorentina  (2-2)
+TRANSP:TRANSPARENT
+UID:5909892-8633@fotmob.com
+URL:https://www.fotmob.com/match/5909892
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Fiorentina starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Fiorentina starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5970397\nClub Friendlies
+DTEND:20260808T190000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260808T170000Z
+LOCATION:Groupama Aréna\, Üllői út 129\, IX. ker.\, Budapest\, HUN
+SEQUENCE:0
+SUMMARY:⚽️ Ferencváros - Real Madrid  (1-2)
+TRANSP:TRANSPARENT
+UID:5970397-8633@fotmob.com
+URL:https://www.fotmob.com/match/5970397
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Ferencváros - Real Madrid starting in 15 minutes. Notificat
+ ions can be turned off in calendar settings
+SUMMARY:⚽️ Ferencváros - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5962500\nClub Friendlies
+DTEND:20260812T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260812T190000Z
+LOCATION:Estadio Abanca-Riazor\, Calle Manuel Murguía\, A Coruña (La Coruñ
+ a)\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Deportivo A Coruña - Real Madrid  (0-1)
+TRANSP:TRANSPARENT
+UID:5962500-8633@fotmob.com
+URL:https://www.fotmob.com/match/5962500
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Deportivo A Coruña - Real Madrid starting in 15 minutes. No
+ tifications can be turned off in calendar settings
+SUMMARY:⚽️ Deportivo A Coruña - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5979020\nClub Friendlies
+DTEND:20260816T170000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260816T150000Z
+LOCATION:VELTINS-Arena\, Arenaring 1\, Gelsenkirchen\, GER
+SEQUENCE:0
+SUMMARY:⚽️ Schalke 04 - Real Madrid  (0-3)
+TRANSP:TRANSPARENT
+UID:5979020-8633@fotmob.com
+URL:https://www.fotmob.com/match/5979020
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Schalke 04 - Real Madrid starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Schalke 04 - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868025\nLaLiga
+DTEND:20260822T213000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260822T193000Z
+LOCATION:RCDE Stadium\, Avenida Baix Llobregat 100\, Cornella de Llobregat
+ \, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Espanyol - Real Madrid  (1-2)
+TRANSP:TRANSPARENT
+UID:5868025-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868025
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Espanyol - Real Madrid starting in 15 minutes. Notification
+ s can be turned off in calendar settings
+SUMMARY:⚽️ Espanyol - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868018\nLaLiga
+DTEND:20260826T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260826T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Real Sociedad  (4-1)
+TRANSP:TRANSPARENT
+UID:5868018-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868018
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Real Sociedad starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Real Sociedad starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868038\nLaLiga
+DTEND:20260830T170000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260830T150000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Málaga  (4-0)
+TRANSP:TRANSPARENT
+UID:5868038-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868038
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Málaga starting in 15 minutes. Notifications 
+ can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Málaga starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868043\nLaLiga
+DTEND:20260904T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260904T190000Z
+LOCATION:Estadio La Cartuja de Sevilla\, Edificio Suroeste\, Puerta E\, Se
+ villa\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Betis - Real Madrid  (1-0)
+TRANSP:TRANSPARENT
+UID:5868043-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868043
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Betis - Real Madrid starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Betis - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106242\nChampions League
+DTEND:20260908T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260908T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Inter  (2-1)
+TRANSP:TRANSPARENT
+UID:6106242-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106242
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Inter starting in 15 minutes. Notifications c
+ an be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Inter starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868057\nLaLiga
+DTEND:20260912T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260912T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Rayo Vallecano  (4-1)
+TRANSP:TRANSPARENT
+UID:5868057-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868057
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Rayo Vallecano starting in 15 minutes. Notifi
+ cations can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Rayo Vallecano starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868065\nLaLiga
+DTEND:20260915T213000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260915T193000Z
+LOCATION:Estadio Manuel Martínez Valero\, Avenida Manuel Martínez Valero 3
+ \, Elche\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Elche - Real Madrid  (2-3)
+TRANSP:TRANSPARENT
+UID:5868065-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868065
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Elche - Real Madrid starting in 15 minutes. Notifications c
+ an be turned off in calendar settings
+SUMMARY:⚽️ Elche - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868072\nLaLiga
+DTEND:20260920T161500Z
+DTSTAMP:20261108T182236Z
+DTSTART:20260920T141500Z
+LOCATION:Riyadh Air Metropolitano\, Avenida de Luis Aragonés\, 4\, San Bla
+ s-Canillejas\, Madrid\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Atlético Madrid - Real Madrid  (2-1)
+TRANSP:TRANSPARENT
+UID:5868072-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868072
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Atlético Madrid - Real Madrid starting in 15 minutes. Notif
+ ications can be turned off in calendar settings
+SUMMARY:⚽️ Atlético Madrid - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868089\nLaLiga
+DTEND:20261010T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261010T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Villarreal  (1-0)
+TRANSP:TRANSPARENT
+UID:5868089-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868089
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Villarreal starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Villarreal starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106274\nChampions League
+DTEND:20261014T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261014T190000Z
+LOCATION:Stadio Olimpico\, Viale dei Gladiatori\, 2 / Via del Foro Italico
+ \, Roma\, ITA
+SEQUENCE:0
+SUMMARY:⚽️ Roma - Real Madrid  (3-4)
+TRANSP:TRANSPARENT
+UID:6106274-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106274
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Roma - Real Madrid starting in 15 minutes. Notifications ca
+ n be turned off in calendar settings
+SUMMARY:⚽️ Roma - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868098\nLaLiga
+DTEND:20261018T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261018T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Sevilla  (4-1)
+TRANSP:TRANSPARENT
+UID:5868098-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868098
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Sevilla starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Sevilla starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106244\nChampions League
+DTEND:20261021T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261021T190000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - RB Leipzig  (4-1)
+TRANSP:TRANSPARENT
+UID:6106244-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106244
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - RB Leipzig starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - RB Leipzig starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868105\nLaLiga
+DTEND:20261025T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261025T200000Z
+LOCATION:Spotify Camp Nou\, Carrer d'Arístides Maillol\, Barcelona\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Barcelona - Real Madrid  (1-2)
+TRANSP:TRANSPARENT
+UID:5868105-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868105
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Barcelona - Real Madrid starting in 15 minutes. Notificatio
+ ns can be turned off in calendar settings
+SUMMARY:⚽️ Barcelona - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868118\nLaLiga
+DTEND:20261101T171500Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261101T151500Z
+LOCATION:Campos de Sport de El Sardinero\, Calle del Real Racing Club\, Sa
+ ntander\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Racing Santander - Real Madrid  (0-3)
+TRANSP:TRANSPARENT
+UID:5868118-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868118
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Racing Santander - Real Madrid starting in 15 minutes. Noti
+ fications can be turned off in calendar settings
+SUMMARY:⚽️ Racing Santander - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106401\nChampions League
+DTEND:20261104T194500Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261104T174500Z
+LOCATION:ALLWYN Arena\, Fokon 11\, Nea Filadelfia\, Athína (Athens)\, GRE
+SEQUENCE:0
+SUMMARY:⚽️ AEK Athens - Real Madrid  (2-3)
+TRANSP:TRANSPARENT
+UID:6106401-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106401
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ AEK Athens - Real Madrid starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ AEK Athens - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868129\nLaLiga
+DTEND:20261107T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261107T200000Z
+LOCATION:Estadio de Mestalla\, Avenida de Suecia\, Valencia\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Valencia - Real Madrid  (0-3)
+TRANSP:TRANSPARENT
+UID:5868129-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868129
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Valencia - Real Madrid starting in 15 minutes. Notification
+ s can be turned off in calendar settings
+SUMMARY:⚽️ Valencia - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868139\nLaLiga
+DTEND:20261121T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261121T200000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Celta Vigo
+TRANSP:TRANSPARENT
+UID:5868139-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868139
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Celta Vigo starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Celta Vigo starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106243\nChampions League
+DTEND:20261124T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261124T200000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - PSV Eindhoven
+TRANSP:TRANSPARENT
+UID:6106243-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106243
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - PSV Eindhoven starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - PSV Eindhoven starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868148\nLaLiga
+DTEND:20261128T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261128T200000Z
+LOCATION:Estadio Bernabéu\, Avenida de Concha Espina 1\, Chamartín\, Madri
+ d\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Deportivo Alavés
+TRANSP:TRANSPARENT
+UID:5868148-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868148
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Deportivo Alavés starting in 15 minutes. Noti
+ fications can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Deportivo Alavés starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868239\nLaLiga
+DTEND:20261202T200000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261202T180000Z
+LOCATION:Estadio Municipal de Anoeta\, Paseo de Anoeta 1\, Donostia-San Se
+ bastián\, ESP
+SEQUENCE:0
+SUMMARY:⚽️ Real Sociedad - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868239-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868239
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Sociedad - Real Madrid starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Real Sociedad - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868152\nLaLiga
+DTEND:20261206T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261206T140000Z
+LOCATION:San Mames
+SEQUENCE:0
+SUMMARY:⚽️ Athletic Club - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868152-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868152
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Athletic Club - Real Madrid starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Athletic Club - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106258\nChampions League
+DTEND:20261209T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261209T200000Z
+LOCATION:Emirates Stadium\, Hornsey Road\, London\, ENG
+SEQUENCE:0
+SUMMARY:⚽️ Arsenal - Real Madrid
+TRANSP:TRANSPARENT
+UID:6106258-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106258
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Arsenal - Real Madrid starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Arsenal - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868168\nLaLiga
+DTEND:20261213T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261213T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Osasuna
+TRANSP:TRANSPARENT
+UID:5868168-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868168
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Osasuna starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Osasuna starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868174\nLaLiga
+DTEND:20261220T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20261220T140000Z
+LOCATION:Abanca-Riazor
+SEQUENCE:0
+SUMMARY:⚽️ Deportivo A Coruña - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868174-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868174
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Deportivo A Coruña - Real Madrid starting in 15 minutes. No
+ tifications can be turned off in calendar settings
+SUMMARY:⚽️ Deportivo A Coruña - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868188\nLaLiga
+DTEND:20270103T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270103T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Getafe
+TRANSP:TRANSPARENT
+UID:5868188-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868188
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Getafe starting in 15 minutes. Notifications 
+ can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Getafe starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868198\nLaLiga
+DTEND:20270110T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270110T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Levante
+TRANSP:TRANSPARENT
+UID:5868198-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868198
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Levante starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Levante starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868207\nLaLiga
+DTEND:20270117T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270117T140000Z
+LOCATION:Estadio La Rosaleda
+SEQUENCE:0
+SUMMARY:⚽️ Málaga - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868207-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868207
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Málaga - Real Madrid starting in 15 minutes. Notifications 
+ can be turned off in calendar settings
+SUMMARY:⚽️ Málaga - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106245\nChampions League
+DTEND:20270119T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270119T200000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - LASK
+TRANSP:TRANSPARENT
+UID:6106245-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106245
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - LASK starting in 15 minutes. Notifications ca
+ n be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - LASK starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868218\nLaLiga
+DTEND:20270124T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270124T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Real Betis
+TRANSP:TRANSPARENT
+UID:5868218-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868218
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Real Betis starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Real Betis starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6106334\nChampions League
+DTEND:20270127T220000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270127T200000Z
+LOCATION:Stamford Bridge
+SEQUENCE:0
+SUMMARY:⚽️ Shakhtar Donetsk - Real Madrid
+TRANSP:TRANSPARENT
+UID:6106334-8633@fotmob.com
+URL:https://www.fotmob.com/match/6106334
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Shakhtar Donetsk - Real Madrid starting in 15 minutes. Noti
+ fications can be turned off in calendar settings
+SUMMARY:⚽️ Shakhtar Donetsk - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868228\nLaLiga
+DTEND:20270131T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270131T140000Z
+LOCATION:Campo de Futbol de Vallecas
+SEQUENCE:0
+SUMMARY:⚽️ Rayo Vallecano - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868228-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868228
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Rayo Vallecano - Real Madrid starting in 15 minutes. Notifi
+ cations can be turned off in calendar settings
+SUMMARY:⚽️ Rayo Vallecano - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/6019526\nSuper Cup
+DTEND:20270203T210000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270203T190000Z
+LOCATION:Tupras Stadyumu
+SEQUENCE:0
+SUMMARY:⚽️ Real Sociedad - Real Madrid
+TRANSP:TRANSPARENT
+UID:6019526-8633@fotmob.com
+URL:https://www.fotmob.com/match/6019526
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Sociedad - Real Madrid starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Real Sociedad - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868246\nLaLiga
+DTEND:20270214T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270214T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Athletic Club
+TRANSP:TRANSPARENT
+UID:5868246-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868246
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Athletic Club starting in 15 minutes. Notific
+ ations can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Athletic Club starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868259\nLaLiga
+DTEND:20270221T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270221T140000Z
+LOCATION:Estadio R. Sanchez Pizjuan
+SEQUENCE:0
+SUMMARY:⚽️ Sevilla - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868259-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868259
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Sevilla - Real Madrid starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Sevilla - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868269\nLaLiga
+DTEND:20270228T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270228T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Valencia
+TRANSP:TRANSPARENT
+UID:5868269-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868269
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Valencia starting in 15 minutes. Notification
+ s can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Valencia starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868280\nLaLiga
+DTEND:20270307T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270307T140000Z
+LOCATION:Estadio de la Ceramica
+SEQUENCE:0
+SUMMARY:⚽️ Villarreal - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868280-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868280
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Villarreal - Real Madrid starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Villarreal - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868290\nLaLiga
+DTEND:20270314T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270314T140000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Espanyol
+TRANSP:TRANSPARENT
+UID:5868290-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868290
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Espanyol starting in 15 minutes. Notification
+ s can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Espanyol starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868292\nLaLiga
+DTEND:20270321T160000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270321T140000Z
+LOCATION:Abanca Balaidos
+SEQUENCE:0
+SUMMARY:⚽️ Celta Vigo - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868292-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868292
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Celta Vigo - Real Madrid starting in 15 minutes. Notificati
+ ons can be turned off in calendar settings
+SUMMARY:⚽️ Celta Vigo - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868309\nLaLiga
+DTEND:20270404T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270404T130000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Atlético Madrid
+TRANSP:TRANSPARENT
+UID:5868309-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868309
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Atlético Madrid starting in 15 minutes. Notif
+ ications can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Atlético Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868315\nLaLiga
+DTEND:20270411T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270411T130000Z
+LOCATION:Estadio El Sadar
+SEQUENCE:0
+SUMMARY:⚽️ Osasuna - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868315-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868315
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Osasuna - Real Madrid starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Osasuna - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868327\nLaLiga
+DTEND:20270418T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270418T130000Z
+LOCATION:Coliseum
+SEQUENCE:0
+SUMMARY:⚽️ Getafe - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868327-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868327
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Getafe - Real Madrid starting in 15 minutes. Notifications 
+ can be turned off in calendar settings
+SUMMARY:⚽️ Getafe - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868337\nLaLiga
+DTEND:20270421T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270421T130000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Elche
+TRANSP:TRANSPARENT
+UID:5868337-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868337
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Elche starting in 15 minutes. Notifications c
+ an be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Elche starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868347\nLaLiga
+DTEND:20270502T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270502T130000Z
+LOCATION:Estadio Ciudad de Valencia
+SEQUENCE:0
+SUMMARY:⚽️ Levante - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868347-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868347
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Levante - Real Madrid starting in 15 minutes. Notifications
+  can be turned off in calendar settings
+SUMMARY:⚽️ Levante - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868358\nLaLiga
+DTEND:20270509T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270509T130000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Barcelona
+TRANSP:TRANSPARENT
+UID:5868358-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868358
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Barcelona starting in 15 minutes. Notificatio
+ ns can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Barcelona starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868368\nLaLiga
+DTEND:20270516T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270516T130000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Racing Santander
+TRANSP:TRANSPARENT
+UID:5868368-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868368
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Racing Santander starting in 15 minutes. Noti
+ fications can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Racing Santander starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868371\nLaLiga
+DTEND:20270523T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270523T130000Z
+LOCATION:Estadio Mendizorroza
+SEQUENCE:0
+SUMMARY:⚽️ Deportivo Alavés - Real Madrid
+TRANSP:TRANSPARENT
+UID:5868371-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868371
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Deportivo Alavés - Real Madrid starting in 15 minutes. Noti
+ fications can be turned off in calendar settings
+SUMMARY:⚽️ Deportivo Alavés - Real Madrid starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:https://www.fotmob.com/match/5868389\nLaLiga
+DTEND:20270530T150000Z
+DTSTAMP:20261108T182236Z
+DTSTART:20270530T130000Z
+LOCATION:Estadio Bernabeu
+SEQUENCE:0
+SUMMARY:⚽️ Real Madrid - Deportivo A Coruña
+TRANSP:TRANSPARENT
+UID:5868389-8633@fotmob.com
+URL:https://www.fotmob.com/match/5868389
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽️ Real Madrid - Deportivo A Coruña starting in 15 minutes. No
+ tifications can be turned off in calendar settings
+SUMMARY:⚽️ Real Madrid - Deportivo A Coruña starting in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,11 +1,14 @@
 import 'server-only';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import type { Fixture } from './types';
 
 /**
- * Real Madrid fixtures.
- * Primary: football-data.org (team 86). Its free tier covers La Liga and the Champions League only.
- * Fallback: any ICS feeds in FIXTURES_ICS_URLS (comma-separated) for the rest (Copa del Rey, Supercopa,
- * Club World Cup…). ICS games on a day already covered by football-data are skipped.
+ * Real Madrid fixtures, all competitions.
+ * 1. ICS feeds in FIXTURES_ICS_URLS (comma-separated), e.g. a FotMob team calendar link; otherwise the
+ *    bundled snapshot in data/fixtures/real-madrid.ics (FotMob export, all competitions).
+ * 2. football-data.org (team 86), if FOOTBALL_DATA_API_KEY works: La Liga + Champions League with live
+ *    kick-off times. When both list a game on the same day, football-data wins.
  * Responses are cached for 6 hours, so kick-off times refresh several times a day.
  */
 const TEAM_ID = 86;
@@ -54,11 +57,14 @@ async function fromFootballData(): Promise<{ list: Fixture[]; status: FixturesRe
 }
 
 /** Minimal ICS parser: VEVENT with DTSTART and SUMMARY. */
-export function parseIcs(text: string): { uid: string; start: string; summary: string; allDay: boolean }[] {
+export type IcsEvent = { uid: string; start: string; summary: string; description: string; allDay: boolean };
+
+export function parseIcs(text: string): IcsEvent[] {
   const unfolded = text.replace(/\r?\n[ \t]/g, '');
-  const out: { uid: string; start: string; summary: string; allDay: boolean }[] = [];
+  const out: IcsEvent[] = [];
   for (const block of unfolded.split('BEGIN:VEVENT').slice(1)) {
-    const get = (k: string) => block.match(new RegExp(`^${k}(?:;[^:\\n]*)?:(.*)$`, 'm'))?.[1]?.trim();
+    const event = block.split('BEGIN:VALARM')[0]; // alarms repeat SUMMARY/DESCRIPTION
+    const get = (k: string) => event.match(new RegExp(`^${k}(?:;[^:\\n]*)?:(.*)$`, 'm'))?.[1]?.trim();
     const raw = get('DTSTART');
     const summary = get('SUMMARY')?.replace(/\\,/g, ',').replace(/\\;/g, ';');
     if (!raw || !summary) continue;
@@ -68,37 +74,49 @@ export function parseIcs(text: string): { uid: string; start: string; summary: s
     const iso = allDay
       ? `${m[1]}-${m[2]}-${m[3]}T12:00:00Z`
       : `${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:${m[6]}${m[7] ? 'Z' : ''}`;
-    out.push({ uid: get('UID') ?? `${raw}-${summary}`, start: iso, summary, allDay });
+    const description = (get('DESCRIPTION') ?? '').replace(/\\,/g, ',');
+    out.push({ uid: get('UID') ?? `${raw}-${summary}`, start: iso, summary, description, allDay });
   }
   return out;
 }
 
+// Leagues usually confirm kick-off times about 3 weeks ahead; further out, a listed time is a placeholder.
+const CONFIRMED_WITHIN_DAYS = 21;
+
+/** Turns calendar events into fixtures. Handles FotMob's "⚽️ Home - Away  (2-1)" summaries. */
+export function icsToFixtures(events: IcsEvent[], now = new Date()): Fixture[] {
+  return events
+    .filter((e) => /real madrid/i.test(e.summary))
+    .map((e) => {
+      const clean = e.summary.replace(/^[^\p{L}\p{N}]+/u, '').replace(/\s*\(\d+\s*-\s*\d+\)\s*$/, '').trim();
+      const [home, away] = clean.split(/\s+(?:-|–|vs\.?|v)\s+/i);
+      const competition = e.description.split('\\n').map((x) => x.trim()).filter((x) => x && !/^https?:/.test(x)).pop() || 'Other';
+      const days = (new Date(e.start).getTime() - now.getTime()) / 86_400_000;
+      return {
+        id: `ics-${e.uid}`,
+        competition,
+        home: home ?? clean,
+        away: away ?? '',
+        kickoff: e.start,
+        timeConfirmed: !e.allDay && days <= CONFIRMED_WITHIN_DAYS,
+        source: 'ics' as const,
+      };
+    });
+}
+
 async function fromIcs(): Promise<{ list: Fixture[]; status: FixturesResult['sources']['ics'] }> {
   const urls = (process.env.FIXTURES_ICS_URLS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
-  if (!urls.length) return { list: [], status: 'not_configured' };
   try {
-    const lists = await Promise.all(
-      urls.map(async (url) => {
-        const res = await fetch(url, { next: { revalidate: REVALIDATE, tags: ['fixtures'] } });
-        if (!res.ok) throw new Error(String(res.status));
-        return parseIcs(await res.text());
-      }),
-    );
-    return {
-      status: 'ok',
-      list: lists.flat().filter((e) => /real madrid/i.test(e.summary)).map((e) => {
-        const [home, away] = e.summary.split(/\s+(?:-|–|vs\.?|v)\s+/i);
-        return {
-          id: `ics-${e.uid}`,
-          competition: 'Other',
-          home: home ?? e.summary,
-          away: away ?? '',
-          kickoff: e.start,
-          timeConfirmed: !e.allDay,
-          source: 'ics' as const,
-        };
-      }),
-    };
+    const texts = urls.length
+      ? await Promise.all(
+          urls.map(async (url) => {
+            const res = await fetch(url, { next: { revalidate: REVALIDATE, tags: ['fixtures'] } });
+            if (!res.ok) throw new Error(String(res.status));
+            return res.text();
+          }),
+        )
+      : [await readFile(path.join(process.cwd(), 'data/fixtures/real-madrid.ics'), 'utf8')];
+    return { status: 'ok', list: icsToFixtures(texts.flatMap(parseIcs)) };
   } catch {
     return { list: [], status: 'error' };
   }

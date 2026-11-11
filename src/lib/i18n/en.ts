@@ -88,7 +88,7 @@ export const en = {
       company: 'NTT DATA holidays',
       companyHint: 'Import the list in Settings.',
       football: 'Real Madrid matches',
-      footballHint: 'All competitions, refreshed every 6 hours.',
+      footballHint: 'All competitions (FotMob calendar). Far-off kick-off times show as TBC.',
       footballNotConfigured: 'Waiting for the fixtures API key.',
       footballError: 'Couldn’t load matches. Showing the calendar without them.',
       cultural: 'Christian and cultural dates',

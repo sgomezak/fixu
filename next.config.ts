@@ -9,6 +9,8 @@ const withSerwist = withSerwistInit({
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  // Bundled fixtures snapshot is read at runtime by the fixtures route.
+  outputFileTracingIncludes: { '/api/fixtures': ['./data/fixtures/**'] },
 };
 
 export default withSerwist(nextConfig);
