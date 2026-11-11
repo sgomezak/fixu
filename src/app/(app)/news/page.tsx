@@ -5,8 +5,8 @@ import { getNewsFeed } from '@/modules/news/feed.server';
 import { NewsView } from './NewsView';
 
 export const metadata: Metadata = { title: t.news.title };
-// Radar.AE publishes Mon/Wed/Fri; politics editions redeploy the app when committed.
-export const revalidate = 3600;
+// Politics feeds refresh every 30 min; Radar.AE publishes Mon/Wed/Fri.
+export const revalidate = 1800;
 
 export default async function NewsPage() {
   const feed = await getNewsFeed();

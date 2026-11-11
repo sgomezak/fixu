@@ -2,6 +2,7 @@ import 'server-only';
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { radarBriefing, radarToItems, type RadarEdition } from './radar';
+import { FEEDS, mergeFeeds, parseFeed } from './rss';
 import type { NewsFeed, NewsItem, PoliticsEdition } from './types';
 
 /** Radar.AE's public site (Cloudflare); its editions are static JSON files. */
@@ -19,6 +20,26 @@ async function radarEditions(): Promise<RadarEdition[] | null> {
   }
 }
 
+/** Spain and World from the outlets' RSS feeds; a feed that fails is skipped. */
+async function politicsFromFeeds() {
+  const parsed = await Promise.all(
+    FEEDS.map(async (feed) => {
+      try {
+        const res = await fetch(feed.url, { next: { revalidate: 1800, tags: ['news'] }, signal: AbortSignal.timeout(8000), headers: { 'User-Agent': 'FixU news reader' } });
+        return res.ok ? { feed, entries: parseFeed(await res.text()) } : null;
+      } catch {
+        return null;
+      }
+    }),
+  );
+  const ok = parsed.filter((p): p is NonNullable<typeof p> => p != null);
+  return {
+    spain: mergeFeeds(ok.filter((p) => p.feed.section === 'spain')),
+    world: mergeFeeds(ok.filter((p) => p.feed.section === 'world')),
+    sources: ok.length,
+  };
+}
+
 async function politicsEdition(): Promise<PoliticsEdition | null> {
   const dir = path.join(process.cwd(), 'data/news');
   try {
@@ -31,16 +52,18 @@ async function politicsEdition(): Promise<PoliticsEdition | null> {
 }
 
 export async function getNewsFeed(): Promise<NewsFeed> {
-  const [radar, politics] = await Promise.all([radarEditions(), politicsEdition()]);
+  const [radar, politics, feeds] = await Promise.all([radarEditions(), politicsEdition(), politicsFromFeeds()]);
   const items: NewsItem[] = [];
   const briefings: NewsFeed['briefings'] = [];
 
   if (politics) {
     briefings.push({ label: 'Spain and the world', lines: politics.briefing, at: politics.publishedAt });
-    for (const i of politics.items) {
+    for (const i of feeds.spain.length || feeds.world.length ? [] : politics.items) {
       items.push({ id: `pol-${politics.id}-${i.id}`, section: i.sec, title: i.title, summary: i.summary, source: i.source, leaning: i.leaning, url: i.url, date: i.date });
     }
   }
+  // Live feeds first; a written edition in data/news (optional) adds its own briefing.
+  items.push(...feeds.spain, ...feeds.world);
   if (radar?.length) {
     const [latest] = radar;
     const lines = radarBriefing(latest);
@@ -58,7 +81,7 @@ export async function getNewsFeed(): Promise<NewsFeed> {
   return {
     briefings,
     items,
-    sources: { radar: radar ? 'ok' : 'error', politics: politics ? 'ok' : 'none' },
+    sources: { radar: radar ? 'ok' : 'error', politics: feeds.sources || politics ? 'ok' : 'none' },
     radarEdition: radar?.[0] ? { numero: radar[0].numero, publicada: radar[0].publicada } : undefined,
     politicsAt: politics?.publishedAt,
   };

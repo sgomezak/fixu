@@ -68,3 +68,19 @@
 - **Real Madrid layer** shows "Waiting for the fixtures API key" until the key is set. football-data.org's free tier covers La Liga and the Champions League; other competitions come from `FIXTURES_ICS_URLS`.
 - **Social goal** uses the brief's "at least one social block a week" until you set a target; **side-hustle target** stays "not set".
 - Not yet checked: Lighthouse and install on a phone (need a deployed URL).
+
+## Health and News (brought forward from Phases 4 and 6)
+
+**Health** reads `data/garmin/*.csv`, the same files the *Garmin weekly report* routine builds. The first files are the real export of 2–8 Nov 2026.
+- Workouts this week: Garmin sport sessions of 20 min or more, plus gym events marked done in the calendar on days Garmin has none (no double count). Walks count as steps, golf as social.
+- Steps: weekly average over days with data, against 8,000. Sleep, resting HR, HRV, Body Battery and stress averages; per-day bar charts with target lines, value labels, tooltips and a screen-reader table.
+- Fatigue signal for the latest synced day (sleep under 6.5 h, score under 70, Body Battery peak under 50, resting HR 5+ above the 14-day average). The scheduler will use it in Phase 2.
+- Not yet: weight and meals (Garmin doesn't send them), manual upload and the import endpoint from the brief.
+
+**News**
+- Briefing and Aviation come from Radar.AE's public site (latest two editions, refreshed hourly). The fuel section and fuel lines in "In 30 seconds" are left out. Radar.AE itself is unchanged.
+- Spain and World come from outlets' RSS feeds across the spectrum, refreshed every 30 minutes: headline, outlet with its leaning, and link only.
+- Saved stories stay on the device for now.
+- Not yet: a Claude-written politics briefing (needs the Anthropic API key).
+
+**Checks:** 42 unit tests (Garmin parsing and maths on the real export, fatigue thresholds, Radar fuel filter, RSS/Atom parsing and balance), axe 0 violations on Health and News at 390×844 light/dark and desktop. The RSS feeds and Radar.AE's site can't be reached from the build machine, so live loading was checked on the deployed app only.

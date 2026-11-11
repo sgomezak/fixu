@@ -46,7 +46,7 @@ function Story({ item, saved, onToggle }: { item: NewsItem; saved: boolean; onTo
           <span className="sr-only"> {t.news.opensNew}</span>
         </a>
       </h3>
-      <p className="line-clamp-3 text-[0.9375rem] text-muted">{item.summary}</p>
+      {item.summary && <p className="line-clamp-3 text-[0.9375rem] text-muted">{item.summary}</p>}
       <div className="flex items-center justify-between gap-3 pt-1">
         <p className="min-w-0 text-[0.8125rem] text-muted">
           <span className="font-medium text-ink">{item.source}</span>
