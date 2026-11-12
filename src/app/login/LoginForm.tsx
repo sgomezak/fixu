@@ -9,7 +9,10 @@ import { t } from '@/lib/i18n/en';
 
 export function LoginForm() {
   const params = useSearchParams();
-  const ids = { email: useId(), err: useId() };
+  const ids = { email: useId(), err: useId(), code: useId(), codeErr: useId() };
+  const [code, setCode] = useState('');
+  const [codeError, setCodeError] = useState('');
+  const [verifying, setVerifying] = useState(false);
   const input = useRef<HTMLInputElement>(null);
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
@@ -45,14 +48,59 @@ export function LoginForm() {
     setStatus('sent');
   };
 
+  // The 6-digit code works in any browser; the link only in the browser that asked for it.
+  const verify = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const token = code.replace(/\s/g, '');
+    if (!/^\d{6,8}$/.test(token)) {
+      setCodeError(t.login.badCode);
+      return;
+    }
+    const supabase = getBrowserClient();
+    if (!supabase) return;
+    setVerifying(true);
+    setCodeError('');
+    const { error: err } = await supabase.auth.verifyOtp({ email: email.trim(), token, type: 'email' });
+    if (err) {
+      setVerifying(false);
+      setCodeError(t.login.badCode);
+      return;
+    }
+    const next = params.get('next');
+    window.location.assign(next && next.startsWith('/') && !next.startsWith('//') ? next : '/');
+  };
+
   if (status === 'sent') {
     return (
-      <div className="flex flex-col gap-4 rounded-[var(--radius-card)] border border-line bg-surface p-5" role="status">
+      <div className="flex flex-col gap-4 rounded-[var(--radius-card)] border border-line bg-surface p-5">
         <span className="flex size-11 items-center justify-center rounded-full bg-primary-soft text-primary">
           <MailCheck size={22} aria-hidden="true" />
         </span>
         <h2 className="text-[1.0625rem] font-semibold">{t.login.sentTitle}</h2>
-        <p className="text-[0.9375rem] text-muted">{t.login.sent(email.trim())}</p>
+        <p role="status" className="text-[0.9375rem] text-muted">{t.login.sent(email.trim())}</p>
+        <form onSubmit={verify} noValidate className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
+            <label htmlFor={ids.code} className={fieldStyles.label}>{t.login.code}</label>
+            <input
+              id={ids.code}
+              name="code"
+              inputMode="numeric"
+              autoComplete="one-time-code"
+              spellCheck={false}
+              maxLength={10}
+              placeholder={t.login.codePlaceholder}
+              value={code}
+              aria-invalid={Boolean(codeError)}
+              aria-describedby={codeError ? ids.codeErr : undefined}
+              onChange={(e) => setCode(e.target.value)}
+              className={`${fieldStyles.input} tabular tracking-[0.3em]`}
+            />
+            <p id={ids.codeErr} aria-live="polite" className={`${fieldStyles.error} empty:hidden`}>{codeError}</p>
+          </div>
+          <button type="submit" disabled={verifying} className={buttonStyles.primary}>
+            {verifying ? t.login.verifying : t.login.verify}
+          </button>
+        </form>
         <button type="button" onClick={() => setStatus('idle')} className={`${buttonStyles.quiet} self-start`}>
           {t.login.again}
         </button>
